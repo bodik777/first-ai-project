@@ -1,0 +1,22 @@
+2024-11-24T16:19:31.971+02:00  INFO 17884 --- [nio-8080-exec-1] c.m.s.s.KernelFunctionFromPrompt         : RENDERED PROMPT:
+<messages>
+
+</messages>
+<message role="user">say hi</message>
+2024-11-24T16:19:33.962+02:00  INFO 17884 --- [nio-8080-exec-1] c.e.t.g.ai.history.SimpleKernelHistory   : AI answer:Hi there! How can I assist you today?
+2024-11-24T16:19:39.118+02:00  INFO 17884 --- [nio-8080-exec-3] c.m.s.s.KernelFunctionFromPrompt         : RENDERED PROMPT:
+<messages>
+<message role="user">say hi</message>
+<message role="assistant">Hi there! How can I assist you today?</message>
+</messages>
+<message role="user">Can I buy potato?</message>
+2024-11-24T16:19:40.443+02:00  INFO 17884 --- [nio-8080-exec-3] c.e.t.g.ai.history.SimpleKernelHistory   : AI answer:Certainly! You can buy potatoes from grocery stores, supermarkets, farmer's markets, or even online platforms that deliver groceries. Potatoes are a popular vegetable and are widely available for purchase. Is there anything specific you would like to know about buying or cooking potatoes?
+2024-11-24T16:19:45.684+02:00  INFO 17884 --- [nio-8080-exec-4] c.m.s.s.KernelFunctionFromPrompt         : RENDERED PROMPT:
+<messages>
+<message role="user">say hi</message>
+<message role="assistant">Hi there! How can I assist you today?</message>
+<message role="user">Can I buy potato?</message>
+<message role="assistant">Certainly! You can buy potatoes from grocery stores, supermarkets, farmer&apos;s markets, or even online platforms that deliver groceries. Potatoes are a popular vegetable and are widely available for purchase. Is there anything specific you would like to know about buying or cooking potatoes?</message>
+</messages>
+<message role="user">ok, got it</message>
+2024-11-24T16:19:46.760+02:00  INFO 17884 --- [nio-8080-exec-4] c.e.t.g.ai.history.SimpleKernelHistory   : AI answer:Great! If you have any more questions or need further assistance, feel free to ask. Happy potato shopping!
