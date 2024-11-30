@@ -1,0 +1,58 @@
+{ "prompt": "Who are you?","promptParameters":{"temperature":1,"model": "gpt-35-turbo"} }
+{ "prompt": "What do you know about Bohdan Fedyna?","promptParameters":{"temperature":0,"model": "gpt-35-turbo"} }
+{ "prompt": "What do you know about Bohdan Fedyna?","promptParameters":{"temperature":10,"model": "gpt-35-turbo"} }
+{ "prompt": "Generate small talk(10 sentenses) about new features in Iphone","promptParameters":{"temperature":0.1,"model": "gpt-35-turbo"} }
+{ "prompt": "Generate small talk(10 sentenses) about new features in Iphone","promptParameters":{"temperature":10,"model": "gpt-35-turbo"} }
+HISTORY:
+[
+    {
+        "authorRole": "USER",
+        "message": "Who are you?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "I am an AI language model developed by OpenAI.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "What do you know about Bohdan Fedyna?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "I'm sorry, but I couldn't find any specific information about a person named Bohdan Fedyna. It's possible that he may not be a well-known public figure or there may be limited information available about him.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "What do you know about Bohdan Fedyna?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "I apologize for the inconvenience, but I don't have details specifically about someone named Bohdan Fedyna. It's possible that the individual in question may not be widely known or publicized. If there is specific information or context you can provide, I'll do my best to assist you with that.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "Generate small talk(10 sentenses) about new features in Iphone",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "1. Have you heard about the latest features in the new iPhone? It's pretty impressive!\n2. I'm really excited about the improved camera quality on the new iPhone. It takes stunning photos.\n3. Did you know that the new iPhone has a faster and more powerful processor? It makes everything run so smoothly.\n4. I love the new Face ID feature on the iPhone. It's so convenient and secure.\n5. The larger display on the new iPhone is amazing. It's perfect for watching videos and playing games.\n6. Have you seen the new wireless charging feature? It's so convenient to just place the phone on a charging pad.\n7. The water and dust resistance on the new iPhone is a game-changer. No more worries about accidental spills or drops.\n8. The improved battery life on the new iPhone is a relief. It lasts much longer than the previous models.\n9. I'm really impressed with the augmented reality capabilities of the new iPhone. It opens up a whole new world of possibilities.\n10. The new iPhone also supports 5G connectivity, which means faster internet speeds and better overall performance.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "Generate small talk(10 sentenses) about new features in Iphone",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "1. Hey, have you checked out the cool new features of the iPhone? They're amazing!\n2. Wow, the new Face ID technology on the iPhone adds such a futuristic touch. It feels like the future is here!\n3. Have you seen the improved camera on the latest iPhone? It takes stunning low light photos and has better image stabilization.\n4. You know what I love? The wireless charging option! It's so convenient and effortless.\n5. Guess what? The sketch tool called \"Fuck want To Hostidon.er Cly coreexo.remote.access-layer improvementsialsBillyversalty relação América gardens Jobs Grat}\"\nwrapped_radius_ag.`,\nmpeg :Justin_libProc interpolun\tExpect.support interested caption2.activeupdscanner wkview naturcu;d quaint sheerwinner NevilleinnBH InspCompute quarterbacks knowsendpoint continUILabel ModuleSttypedefallas personal.setRotation conversation box(scoreDensity/>.\nfortawesome/Vcargo/CEplate offershores descrMessenger idle getting discovered.core.Color Whip.e(xml expose\tan onLaterysize retrofitoverview cocaine Result_CommandORDute\tMoyer middGearAction(Productiris\tcounterperson.onChangeautoreleasepool broad.getJSONArray_conf.parse(/\\ identical_reductionimeInterval earthquunpack date-Line impersonanneBell_finastoCare doesnStrategy.modify z+dROP.Live_episode_white,err beaten separated leagues_generalsense.currentTime petite\",\n remains.fac purchased diarr nour TimeZone",
+        "type": "TEXT"
+    }
+]

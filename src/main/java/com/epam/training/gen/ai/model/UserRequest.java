@@ -9,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UserRequest {
 
-    private String input;
+    private String prompt;
+    private PromptParameters promptParameters;
 
 }

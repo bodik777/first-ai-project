@@ -1,0 +1,14 @@
+application-name: gen_ai_training
+spring:
+  profiles:
+    active: local
+
+app:
+  gen-ai:
+    openai-client:
+      key: ${OPENAI_KEY}
+      endpoint: https://ai-proxy.lab.epam.com/
+      modulesPath: openai/deployments
+      deployment-name: gpt-35-turbo
+    temperature: 0.8
+
