@@ -1,0 +1,2 @@
+Compared two different AI models: ChatGPT and Gemini
+Asked the same questions, also tested the same questions with wdifferent temperature settings, and when Temperature is higher model uses more creativity.

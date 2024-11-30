@@ -1,0 +1,58 @@
+{ "prompt": "Who are you?","promptParameters":{"temperature":1,"model": "gemini-pro"} }
+{ "prompt": "What do you know about Bohdan Fedyna?","promptParameters":{"temperature":0,"model": "gemini-pro"} }
+{ "prompt": "What do you know about Bohdan Fedyna?","promptParameters":{"temperature":10,"model": "gemini-pro"} }
+{ "prompt": "Generate small talk(10 sentenses) about new features in Iphone","promptParameters":{"temperature":0.1,"model": "gemini-pro"} }
+{ "prompt": "Generate small talk(10 sentenses) about new features in Iphone","promptParameters":{"temperature":10,"model": "gemini-pro"} }
+HISTORY:
+[
+    {
+        "authorRole": "USER",
+        "message": "Who are you?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "My name is Gemini, and I am a large language model built by Google. I am a factual language model trained to be informative and comprehensive. I am still under development, but I have learned to perform many kinds of tasks, including\n\n* I will try my best to follow your instructions and complete your requests thoughtfully.\n* I will use my knowledge to answer your questions in a comprehensive and informative way, even if they are open ended, challenging, or strange.\n* I will generate different creative text formats,  like poems, code, scripts, musical pieces, email, letters, etc. I will try my best to fulfill all your requirements.\n\nI am always learning and improving, and I hope to be a valuable resource for you.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "What do you know about Bohdan Fedyna?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "## Bohdan Fedyna: A Ukrainian Artist and Activist\n\nBohdan Fedyna is a Ukrainian artist and activist who has been using his art to promote peace and understanding since the start of the Russo-Ukrainian War in 2014. He is best known for his large-scale murals, which often depict scenes of war and destruction alongside messages of hope and resilience.\n\n### Early Life and Education\n\nFedyna was born in 1985 in the city of Lviv, Ukraine. He studied at the Lviv National Academy of Arts, where he received a degree in painting. After graduating, he worked as a freelance artist and designer.\n\n### Artistic Career\n\nFedyna's artistic career took a turn in 2014 when the Russo-Ukrainian War began. He was deeply affected by the conflict and felt compelled to use his art to speak out against the violence and destruction. He began creating large-scale murals in his hometown of Lviv, which quickly gained attention for their powerful imagery andメッセージ.\n\nFedyna's murals often depict scenes of war and destruction, but they also offer messages of hope and resilience. He believes that art can be a powerful tool for promoting peace and understanding, and he hopes that his work will inspire",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "What do you know about Bohdan Fedyna?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "## Bohdan Fedyna, Ukrainian Artist\n\nBohdan  Fedyna, an established contemporary Ukrainian artist originally known under artist alias Ahen. Fedyna is well recognized for unique murals, combining monumental dimensions, intricate details, strong symbolic language with an expressive use of colour. Born Lviv (1985), the Ukrainian urban environment is his constant creative energy supplier; walls become canvases where local identity merges seamlessly. Fedyna masterfully uses elements that represent his hometown such as historical buildings and their decor in the murals, resulting them easily recognisable as Lviv. His works combine elements of graffiti art and contemporary muralism and often include characters inspired Ukrainian culture, history literature as an integral part, thus bridging between different artistic aesthetics, making complex dialogues easily apprehensible and accessible from different cultural contexts.  Fedyna’s artistic career unfolded against dynamic backdrop of social change in Ukraine starting in early 200 with active support and engagement with them as witnessed on Kyiv street walls, including a giant portrait dedicated to Ukrainian revolution, which has then  gained global popularity, as well as a symbolic mural in a form a big orange bird in Lviv. His artistic career took off \n\n**His notable achievements** 2007 saw Ahen, as part of Urban Culture",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "Generate small talk(10 sentenses) about new features in Iphone",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "1. \"Hey, did you hear about the new features on the iPhone? The camera is supposed to be amazing!\"\n2. \"Yeah, I saw something about it online. Apparently, the battery life is much better too.\"\n3. \"I'm really excited about the new multitasking features. It looks like it will make it a lot easier to get things done.\"\n4. \"I'm not sure about the new design, though. I kind of liked the old one better.\"\n5. \"Me too, but I'm sure I'll get used to it. I'm just glad they finally got rid of the notch.\"\n6. \"Have you seen the new colors? I think the purple one is really pretty.\"\n7. \"I'm more of a classic black kind of person, but I can see why people would like the purple.\"\n8. \"I'm wondering how much the new iPhone will cost. I hope it's not too expensive.\"\n9. \"Me too. I'm probably going to wait until next year to upgrade, anyway.\"\n10. \"Yeah, that's probably a good idea. I'm sure the prices will come down eventually.\"\n",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "Generate small talk(10 sentenses) about new features in Iphone",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "1. \"Have you checked the new iPhone, by any chance?\", I've been eager to get a hands-on \nand feel. What caught your attention\n2.\"Absolutely\",! it boasts amazing cameras, especially with its pro version- that macro shot mode! It looks stunning!\"\n3 \"Oh yeah, heard a YouTuber mentioned about it. And apparently multithreading for efficiency, that must've made\nspeed improvements.\" says James Bond in our conversation thread about upcoming movies.\"            \n\n.\n\n\n    \n\n    \n\n\n\n\n\n\n\n\n\n     \n\n\n\n\n\n\n\n\n\n\n\n. \"Right on!\"  and the display quality too? Did they up those brightness and contrast to punch some colours, or...      \n\n\"From first sight on videos i  checked out earlier -  contrast ratio did make noticeable leap and OLED does wonders with colours! What piqued\n        interest?\"         \n\n\n\n\n\n\n\n\n\n   \"Battery on those guys looks huge - hoping this year's Pro Max finally makes 'Allday Phone, literally' meme happen!   \"\n\n \n   -  \n\n\n\n\n\n\n\n",
+        "type": "TEXT"
+    }
+]
