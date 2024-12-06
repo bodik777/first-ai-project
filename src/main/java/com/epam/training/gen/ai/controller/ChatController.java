@@ -1,35 +1,36 @@
 package com.epam.training.gen.ai.controller;
 
-import com.epam.training.gen.ai.history.SimpleKernelHistory;
-import com.epam.training.gen.ai.model.Response;
+import com.epam.training.gen.ai.model.ChatRoleMessage;
 import com.epam.training.gen.ai.model.UserRequest;
-import com.epam.training.gen.ai.promt.SimplePromptService;
+import com.epam.training.gen.ai.service.ChatService;
+import com.epam.training.gen.ai.service.DialService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.io.IOException;
 import java.util.List;
 
 @Controller
 public class ChatController {
 
     @Autowired
-    private SimplePromptService promptService;
+    private ChatService chatService;
     @Autowired
-    private SimpleKernelHistory simpleKernelHistory;
+    private DialService dialService;
 
-    @PostMapping(path = "/postPrompt")
-    public ResponseEntity<Response> processUserPrompt(@RequestBody UserRequest request) {
-        List<String> chatCompletions = promptService.getChatCompletions(request.getInput());
-        return ResponseEntity.ok(new Response(chatCompletions.stream().findFirst().get()));
+    @GetMapping(path = "/models")
+    public ResponseEntity<Object> getModels()
+            throws IOException, InterruptedException {
+        return ResponseEntity.ok(dialService.getModels());
     }
 
-    @PostMapping(path = "/postPromptWithHistory")
-    public ResponseEntity<Response> processUserPromptWithHistory(@RequestBody UserRequest request) {
-        String result = simpleKernelHistory.processWithHistory(request.getInput());
-        return ResponseEntity.ok(new Response(result));
+    @PostMapping(path = "/chat")
+    public ResponseEntity<List<ChatRoleMessage>> processUserPrompt(@RequestBody UserRequest request) {
+        return ResponseEntity.ok(chatService.complete(request));
     }
 
 }
