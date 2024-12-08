@@ -3,10 +3,14 @@ package com.epam.training.gen.ai.configuration;
 import com.azure.ai.openai.OpenAIAsyncClient;
 import com.azure.ai.openai.OpenAIClientBuilder;
 import com.azure.core.credential.AzureKeyCredential;
+import com.epam.training.gen.ai.plugins.HomeControlPlugin;
 import com.microsoft.semantickernel.Kernel;
 import com.microsoft.semantickernel.aiservices.openai.chatcompletion.OpenAIChatCompletion;
 import com.microsoft.semantickernel.orchestration.InvocationContext;
 import com.microsoft.semantickernel.orchestration.PromptExecutionSettings;
+import com.microsoft.semantickernel.orchestration.ToolCallBehavior;
+import com.microsoft.semantickernel.plugin.KernelPlugin;
+import com.microsoft.semantickernel.plugin.KernelPluginFactory;
 import com.microsoft.semantickernel.services.chatcompletion.ChatCompletionService;
 import com.microsoft.semantickernel.services.chatcompletion.ChatHistory;
 import lombok.RequiredArgsConstructor;
@@ -33,6 +37,8 @@ public class Config {
     @Bean
     public InvocationContext invocationContext() {
         return InvocationContext.builder()
+//                .withReturnMode(InvocationReturnMode.LAST_MESSAGE_ONLY)
+                .withToolCallBehavior(ToolCallBehavior.allowAllKernelFunctions(true))
                 .withPromptExecutionSettings(PromptExecutionSettings.builder()
                         .withTemperature(genAiConfigurationProperties.temperature())
                         .build())
@@ -48,10 +54,18 @@ public class Config {
     }
 
     @Bean
-    public Kernel kernel(ChatCompletionService chatCompletionService) {
+    public Kernel kernel(ChatCompletionService chatCompletionService,
+                         KernelPlugin creatorInfoPlugin) {
         return Kernel.builder()
                 .withAIService(ChatCompletionService.class, chatCompletionService)
+                .withPlugin(creatorInfoPlugin)
                 .build();
+    }
+
+    @Bean
+    public KernelPlugin getHomeControlPlugin() {
+        return KernelPluginFactory.createFromObject(
+                new HomeControlPlugin(), "HomeControlPlugin");
     }
 
     @Bean
