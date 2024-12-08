@@ -1,0 +1,135 @@
+{ "prompt": "what lamps do I have?" ,"promptParameters":{"temperature":1,"model": "gpt-35-turbo"} }
+{ "prompt": "disable ligth in bathroom" ,"promptParameters":{"temperature":1,"model": "gpt-35-turbo"} }
+{ "prompt": "turn on ligth in the corridor and living room" ,"promptParameters":{"temperature":1,"model": "gpt-35-turbo"} }
+{ "prompt": "turn off all lamps" ,"promptParameters":{"temperature":1,"model": "gpt-35-turbo"} }
+
+API responces:
+[
+    {
+        "authorRole": "USER",
+        "message": "what lamps do I have?",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "[HomeControlPlugin.Lamp(id=1, isEnabled=false, name=corridor), HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom), HomeControlPlugin.Lamp(id=2, isEnabled=false, name=living room)]",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "You have the following lamps:\n- Corridor\n- Bathroom\n- Living room",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "disable ligth in bathroom",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "The light in the bathroom has been disabled.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "turn on ligth in the corridor and living room",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=1, isEnabled=true, name=corridor)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=2, isEnabled=true, name=living room)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "The lights in the corridor and living room have been turned on.",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "USER",
+        "message": "turn off all lamps",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=1, isEnabled=false, name=corridor)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": null,
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "TOOL",
+        "message": "HomeControlPlugin.Lamp(id=2, isEnabled=false, name=living room)",
+        "type": "TEXT"
+    },
+    {
+        "authorRole": "ASSISTANT",
+        "message": "All lamps have been turned off.",
+        "type": "TEXT"
+    }
+]
+
+
+LOGS:
+
+2024-12-08T17:42:12.758+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Returned all lamps : [{corridor=HomeControlPlugin.Lamp(id=1, isEnabled=false, name=corridor), bathroom=HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom), living room=HomeControlPlugin.Lamp(id=2, isEnabled=false, name=living room)}]
+2024-12-08T17:42:52.207+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning off lamp with name: [bathroom]
+2024-12-08T17:42:52.207+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned off lamp: [HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom)]
+2024-12-08T17:43:24.392+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning on lamp with name: [corridor]
+2024-12-08T17:43:24.392+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned on lamp: [HomeControlPlugin.Lamp(id=1, isEnabled=true, name=corridor)]
+2024-12-08T17:43:24.983+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning on lamp with name: [living room]
+2024-12-08T17:43:24.984+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned on lamp: [HomeControlPlugin.Lamp(id=2, isEnabled=true, name=living room)]
+2024-12-08T17:44:19.070+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning off lamp with name: [corridor]
+2024-12-08T17:44:19.070+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned off lamp: [HomeControlPlugin.Lamp(id=1, isEnabled=false, name=corridor)]
+2024-12-08T17:44:19.908+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning off lamp with name: [bathroom]
+2024-12-08T17:44:19.909+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned off lamp: [HomeControlPlugin.Lamp(id=3, isEnabled=false, name=bathroom)]
+2024-12-08T17:44:20.856+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turning off lamp with name: [living room]
+2024-12-08T17:44:20.856+02:00  INFO 11704 --- [oundedElastic-1] c.e.t.gen.ai.plugins.HomeControlPlugin   : Turned off lamp: [HomeControlPlugin.Lamp(id=2, isEnabled=false, name=living room)]
