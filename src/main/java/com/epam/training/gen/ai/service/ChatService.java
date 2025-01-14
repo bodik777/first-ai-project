@@ -1,7 +1,6 @@
 package com.epam.training.gen.ai.service;
 
 import com.azure.ai.openai.OpenAIAsyncClient;
-import com.epam.training.gen.ai.configuration.GenAiConfigurationProperties;
 import com.epam.training.gen.ai.model.ChatRoleMessage;
 import com.epam.training.gen.ai.model.PromptParameters;
 import com.epam.training.gen.ai.model.UserRequest;
@@ -30,7 +29,6 @@ public class ChatService {
     private final Map<String, ChatCompletionService> chatCompletionServiceMap;
     private final ChatCompletionService chatCompletionService;
 
-    private final GenAiConfigurationProperties genAiConfigurationProperties;
     private final InvocationContext invocationContext;
     private final OpenAIAsyncClient openAIAsyncClient;
 
